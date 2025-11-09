@@ -1,0 +1,6 @@
+@layer components {
+    .top-bar {
+        min-height: 65px;
+        @apply flex items-center w-full border-b px-3 no-print z-50 fixed bg-white dark:bg-dark-7 top-0 left-0;
+    }
+}
