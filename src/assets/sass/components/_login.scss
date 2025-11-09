@@ -1,0 +1,26 @@
+@use "../tw-starter/dist/scss/mixins/media" as *;
+
+.login {
+    --tw-bg-opacity: 1;
+    // @apply bg-theme-2 dark:bg-dark-7;
+    @apply p-0;
+
+    .login__input {
+        min-width: 320px;
+        max-width:300px;
+        box-shadow: 0px 3px 5px #00000007;
+
+        @include media-breakpoint-down('xl') {
+            @apply min-w-full;
+        }
+    }
+
+    .btn-primary-auth {
+        color:var(--text-btn-auth);
+        @apply w-full bg-theme-1 border-0 py-2 px-8 focus:outline-none rounded text-lg dark:bg-dark-7 dark:text-white;
+    }   
+
+    .btn-primary-auth.disable {
+        @apply bg-gray-500
+    }
+}
