@@ -1,0 +1,7 @@
+@layer components {
+  .form-label, label {
+    @apply inline-block mb-1 dark:text-gray-200;
+    color:#536066;
+    // color:#505973;
+  }
+}

@@ -1,0 +1,33 @@
+@layer components {
+  // Default Form Control
+  .form-control {
+    @apply w-full text-base outline-none px-3 rounded-md appearance-none placeholder-gray-500 dark:bg-dark-3 dark:border-transparent dark:text-white;
+    
+    
+    &:focus {
+      @apply outline-none ring-0 shadow-none border-gray-500;
+    }
+    &:disabled,
+    &[readonly] {
+      @apply bg-gray-100 cursor-not-allowed dark:bg-dark-3 dark:border-transparent;
+    }
+  }
+
+  .form-control[type="text"]{
+    height: 39px;
+  }
+
+ 
+  // Default Sizes
+  .form-control-sm {
+    @apply text-xs py-1.5 px-2;
+  }
+  .form-control-lg {
+    @apply text-lg py-1.5 px-4;
+  }
+
+  // Form Control Rounded
+  .form-control-rounded {
+    @apply rounded-full;
+  }
+}
